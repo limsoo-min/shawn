@@ -258,6 +258,9 @@
       <div class="up-button" onclick="scrollToTop()">
         <img src="./resources/mario.png" width="32" />맨 위로
       </div>
+      <div id="kakao-link-btn" class="up-button" onclick="scrollToTop()">
+        맨 위로
+      </div>
     </div>
   </body>
 
@@ -296,5 +299,14 @@
         "_blank"
       );
     };
+  </script>
+  <script src="//developers.kakao.com/sdk/js/kakao.min.js"></script>
+  <script type="text/javascript">
+    Kakao.init("db808a3d4f375760a94acfdc49a4cd6d");
+    Kakao.Link.createScrapButton({
+      container: "#kakao-link-btn",
+      requestUrl: "https://limsoo-min.github.io/shawn",
+      templateId: 15208,
+    });
   </script>
 </html>
