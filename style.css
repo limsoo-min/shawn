@@ -46,7 +46,6 @@ body {
   width: 100%;
   max-width: 30rem;
   overflow-x: hidden;
-  overflow-y: scroll;
 }
 
 .logo-container {
